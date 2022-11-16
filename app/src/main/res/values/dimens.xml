@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="simple_size_note">24sp</dimen>
+    <dimen name="subject_size_note">27sp</dimen>
+    <dimen name="normal_size_txt">24sp</dimen>
+</resources>

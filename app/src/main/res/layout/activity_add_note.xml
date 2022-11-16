@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/note_border_high"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".AddNoteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/note_border"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="@string/cancel_msg" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridLayout
+                android:id="@+id/subject_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:orientation="horizontal"
+                android:rowCount="1">
+
+                <EditText
+                    android:id="@+id/subject_note"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight=".80"
+                    android:autofillHints=""
+                    android:gravity="start|top"
+                    android:hint="@string/subject_hint"
+                    android:inputType="text"
+                    android:textSize="@dimen/normal_size_txt" />
+
+                <TextView
+                    android:id="@+id/subject_limit_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight=".20"
+                    android:gravity="center"
+                    android:minWidth="60dp"
+                    android:textSize="@dimen/normal_size_txt" />
+            </GridLayout>
+
+            <LinearLayout
+                android:id="@+id/description_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/subject_wrapper"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/description_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:autofillHints=""
+                    android:background="@drawable/note_border"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="@string/description_hint"
+                    android:inputType="textMultiLine"
+                    android:padding="5dp"
+                    android:textSize="@dimen/normal_size_txt"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/description_limit_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|end"
+                    android:textSize="@dimen/normal_size_txt" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mis notas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="description_hint">Descripcion aqui</string>
+    <string name="subject_hint">Titulo</string>
+    <string name="no_added_note_message">No fue posible agregar la nota.</string>
+    <string name="no_deleted_note_message">No fue posible eliminar la nota.</string>
+    <string name="no_edited_note_message">No fue posible editar la nota.</string>
+    <string name="note_added">La nota ha sido agregada.</string>
+    <string name="note_deleted">La nota ha sido eliminada.</string>
+    <string name="note_edited">La nota ha sido editada.</string>
+
+    <string name="save_msg">Guardar</string>
+    <string name="cancel_msg">Cancelar</string>
+    <string name="edit_msg">Editar</string>
+    <string name="delete_msg">Eliminar</string>
+    <string name="delete_verification_msg">¿Esta seguro que la desea eliminar?</string>
+    <string name="confirm_delete_msg">Si</string>
+
+
+</resources>
